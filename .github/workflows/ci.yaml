@@ -25,4 +25,4 @@ jobs:
         run: dotnet build WordFinderApp/WordFinderApp.sln --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test WordFinderApp/WordFinderApp.sln --no-build --verbosity normal
+        run: dotnet test WordFinderApp/WordFinderTest/WordFinderAppTest.csproj --no-build --verbosity normal
