@@ -82,7 +82,7 @@ This project includes a GitHub Actions workflow to automate build and test steps
 
 - Validates the solution builds successfully with .NET 8
 - Runs all unit tests
-- YAML file: [.github/workflows/ci.yml](.github/workflows/ci.yml)
+- YAML file: [.github/workflows/ci.yml](.github/workflows/ci.yaml)
 
 To enable CI, simply fork the repository and enable GitHub Actions.
 
