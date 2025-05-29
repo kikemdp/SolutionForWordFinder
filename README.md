@@ -25,6 +25,10 @@ The objective of this challenge is to evaluate software engineering best practic
 ---
 
 ## 📂 Project Structure
+```bash
+.github/
+├── workflows/
+└── ci.yaml # Yaml file
 
 WordFinderApp/
 │
@@ -45,14 +49,15 @@ WordFinderApp/
 │ └── AnalysisOfFindMethods.doc # Complexity, memory, algorithm comparison
 │
 └── README.md
+```
 
 ## Run Tests
    dotnet test
 ## Run Benchmarks
-  cd WordFinderBenchmarks
+  cd WordFinderBenchmarks  
   dotnet run -c Release
 ## Manual Test (Executable)
-  Run the executable and follow the prompts:
+  Run the executable and follow the prompts:  
   ./Executable File/WordFinder.exe
 
 ## Design Choices
@@ -70,4 +75,17 @@ WordFinderApp/
   XML documentation for public methods
   Custom exception handling
   Defensive programming (null checks, validations)
+
+## Continuous Integration
+
+This project includes a GitHub Actions workflow to automate build and test steps on every push and pull request.
+
+- Validates the solution builds successfully with .NET 8
+- Runs all unit tests
+- YAML file: [.github/workflows/ci.yml](.github/workflows/ci.yaml)
+
+To enable CI, simply fork the repository and enable GitHub Actions.
+
+
+
 
