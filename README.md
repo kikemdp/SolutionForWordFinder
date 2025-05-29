@@ -26,6 +26,10 @@ The objective of this challenge is to evaluate software engineering best practic
 
 ## 📂 Project Structure
 ```bash
+.github/
+├── workflows/
+└── ci.yaml # Yaml file
+
 WordFinderApp/
 │
 ├── WordFinderApp/ # Main application logic
@@ -50,10 +54,10 @@ WordFinderApp/
 ## Run Tests
    dotnet test
 ## Run Benchmarks
-  cd WordFinderBenchmarks
+  cd WordFinderBenchmarks  
   dotnet run -c Release
 ## Manual Test (Executable)
-  Run the executable and follow the prompts:
+  Run the executable and follow the prompts:  
   ./Executable File/WordFinder.exe
 
 ## Design Choices
