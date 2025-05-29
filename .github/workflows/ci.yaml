@@ -19,10 +19,10 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore WordFinderApp/WordFinderApp.sln
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build WordFinderApp/WordFinderApp.sln --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test WordFinderApp/WordFinderApp.sln --no-build --verbosity normal
